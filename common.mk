@@ -114,8 +114,9 @@ PRODUCT_COPY_FILES += \
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=131072 \
-    debug.hwui.render_dirty_regions=false \
-    ro.bq.gpu_to_cpu_unsupported=1
+    ro.zygote.disable_gl_preload=true \
+    ro.bq.gpu_to_cpu_unsupported=1 \
+    debug.hwui.render_dirty_regions=false
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
